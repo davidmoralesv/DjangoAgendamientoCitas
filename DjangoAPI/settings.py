@@ -125,7 +125,7 @@ TEMPLATES = [
 
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleWare',
+    'corsheaders.middleware.CorsMiddleware',
     'cms.middleware.utils.ApphookReloadMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -141,7 +141,6 @@ MIDDLEWARE = [
 ]
 
 INSTALLED_APPS = [
-    'corsheaders',
     'djangocms_admin_style',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -180,7 +179,10 @@ INSTALLED_APPS = [
     'djangocms_style',
     'djangocms_googlemap',
     'djangocms_video',
-    'DjangoAPI'
+    'DjangoAPI',
+    'corsheaders',
+    'EmployeeApp.apps.EmployeeappConfig',
+    'rest_framework'
 ]
 
 LANGUAGES = (
